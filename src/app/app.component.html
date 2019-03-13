@@ -1,0 +1,21 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to my {{ title }} !
+  </h1>
+</div>
+<br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="list-group">
+        <app-post-list *ngFor="let post of posts"
+                        [postCreated_at]="post.created_at"
+                        [postTitle]="post.title"
+                        [postContent]="post.content"
+                        [postloveIts]="post.loveIts"></app-post-list>
+      </div>
+    </div>
+  </div>
+</div>
